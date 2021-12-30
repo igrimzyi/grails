@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
+
+
 import layoutStyles from '../components/layout.module.css'
 import Link from 'next/link'
 
@@ -14,13 +15,19 @@ export default function Layout({ children, home }) {
       
           <>
             <nav className={layoutStyles.navbar}>
-                <Link className="grails" href="/">
-                    <a>Grails</a>
-                </Link>
                 <Link href="/">
-                    <a>Apples</a>
+                    <a className={layoutStyles.grails} >Grails</a>
                 </Link>
-
+                <Link href="/shop">
+                    <a>Shop</a>
+                </Link>
+                
+                <Image 
+                src="/images/cart.png"
+                height={25}
+                width={25}
+                />
+                
             </nav>
           </>
         
