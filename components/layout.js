@@ -19,12 +19,9 @@ export default function Layout({ children, home }) {
                 <Link href="/shop">
                     <a>Shop</a>
                 </Link>
-                
-                <Image 
-                src="/images/cart.png"
-                height={25}
-                width={25}
-                />
+                <Link href="/cart">
+                  <a>Cart</a>
+                </Link>
                 
             </nav>
           </>
