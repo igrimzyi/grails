@@ -16,12 +16,16 @@ export default function Layout({ children, home }) {
                 <Link href="/">
                     <a className={layoutStyles.grails} >Grails</a>
                 </Link>
+
+                <div className={layoutStyles.cart} >
+                
                 <Link href="/shop">
                     <a>Shop</a>
                 </Link>
                 <Link href="/cart">
                   <a>Cart</a>
                 </Link>
+                </div>
                 
             </nav>
           </>
