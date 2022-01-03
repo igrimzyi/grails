@@ -17,7 +17,7 @@ export default function Layout({ children, home }) {
                     <a className={layoutStyles.grails} >Grails</a>
                 </Link>
 
-                <div className={layoutStyles.cart} >
+                <div className={layoutStyles.rightNav} >
                 
                 <Link href="/shop">
                     <a>Shop</a>
