@@ -16,9 +16,7 @@ export default function Layout({ children, home }) {
                 <Link href="/">
                     <a className={layoutStyles.grails} >Grails</a>
                 </Link>
-
                 <div className={layoutStyles.rightNav} >
-                
                 <Link href="/shop">
                     <a>Shop</a>
                 </Link>
@@ -28,6 +26,13 @@ export default function Layout({ children, home }) {
                 </div>
                 
             </nav>
+          
+          <main className={layoutStyles.mainBody}>{children}</main>
+
+          <footer className={layoutStyles.footer}>
+          I am footer
+
+          </footer>
           </>
         
    )
